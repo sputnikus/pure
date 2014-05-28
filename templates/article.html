@@ -27,7 +27,7 @@
                 <h2 class="article-info">{{ article.author }}</h2>
                 <small class="about-author">{{ article.about_author }}</small>
                 <h5>Published</h5>
-                <p>{{ article.locale_date }}</p>
+                <p>{{ article.date.strftime('%B %Y')}}</p>
                 <a href="/">&larr;Home</a>
             </hgroup>
         </header>
@@ -45,6 +45,11 @@
                 </header>
             </section>
             {{ article.content }}
+            {#{% if article.related_posts %}
+                {% for related_post in article.related_posts %}
+                    {% include 'related.html' %}
+                {% endfor %}
+            {% endif %}#}
             <div class="hr"></div>
             <a href="#" class="go-top">Go Top</a>
             {% if DISQUS_SITENAME %}

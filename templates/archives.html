@@ -17,9 +17,9 @@
                         {% endif %}
                     </a>
                     <h5 class="archive-date">{{ article.date|strftime('%Y') }}</h5>
-                    <h4 class="archive-date">{{ article.date|strftime('%d %B') }}</h4>
+                    <h4 class="archive-date">{{ article.date|strftime('%B') }}</h4>
                     <div class="archive-post"><a href="{{ article.url }}">{{ article.title }}</a></div>
-                    <p class="archive-meta">{{ article.author }} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>
+                    <p class="archive-meta">{{ article.author }}{# in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>#}</p>
                 </div>
             {% endfor %}
         </div>
