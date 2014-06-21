@@ -172,7 +172,7 @@ pre {
     border-bottom: 1px solid #eee;
     padding: 0.4em 0;
     font-size: 80%;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.1em;
 }
 
@@ -290,6 +290,10 @@ pre {
 .share a {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.footnote {
+    font-size: 75%;
 }
 
 /* LAYOUT CSS */

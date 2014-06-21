@@ -1,6 +1,0 @@
-{% if TWITTER_USERNAME and FLATTR_USERNAME %}
-    <a href="https://twitter.com/share?url={{ SITEURL }}/{{ article.url }}&via={{ TWITTER_USERNAME}}&text={{ article.summary|striptags }}">Tweet</a>
-    <a href="http://www.facebook.com/sharer.php?s=100&p[title]={{ article.title|striptags }}&p[summary]={{ article.summary|striptags }}&p[url]={{ SITEURL }}/{{ article.url }}"
-    target="_blank">Facebook</a>
-    <a href="http://bufferapp.com/add?&text={{ article.title|striptags }}&url={{ SITEURL }}/{{ article.url }}" target="_blank">Buffer</a>
-{% endif %}
